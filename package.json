@@ -1,0 +1,19 @@
+{
+  "name": "automation-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "typecheck": "pnpm --recursive --workspace-concurrency=1 run typecheck",
+    "check": "pnpm test",
+    "test": "pnpm --recursive --workspace-concurrency=1 run test",
+    "generate": "pnpm --recursive --workspace-concurrency=1 run generate",
+    "demo": "pnpm --recursive --workspace-concurrency=1 run demo",
+    "scrub": "gitleaks dir . --redact"
+  }
+}
